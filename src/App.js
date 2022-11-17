@@ -4,16 +4,24 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <form>
-        <label>
-          Email:
-          <input type="text" name="name" />
-        </label>
-        <label>
-          Password:
-          <input type="text" name="name" />
-        </label>
-        <input type="submit" value="Submit" />
+      <form className="Form">
+        <div className="FormInputs">
+          <label className="MarginBottom8">
+            {"Email: "}
+            <input type="text" name="name" />
+          </label>
+          <label className="MarginBottom8">
+            {"Password: "}
+            <input type="text" name="name" />
+          </label>
+        </div>
+        <input
+          className="MarginBottom8"
+          // className="MarginRight8"
+          type="submit"
+          value="Submit"
+        />
+        <label className="MarginBottom8">OR</label>
         <input type="button" value="Send link to my email login" />
       </form>
     </div>
